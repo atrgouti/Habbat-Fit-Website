@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200&family=Poppins:wght@200&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #6C63FF;
+    align-items: center;
+}
+.container .logo{
+    background-color: #fff;
+    padding: 5px 13px;
+    border-radius: 20px;
+    letter-spacing: 3px;
+}
+.container .menu{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style: none;
+}
+.container .menu a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    align-items: center;
+}
+.container .menu a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    top: 30px;
+}
+.container .menu li a:hover::before{
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+
+
+/* working on section number 1 now */
+
+.sec1{
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.split{
+    position: absolute;
+    width: 50%;
+    height: 88.5%;
+}
+.split.left{
+    left: 0;
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.split.left h4, .iam, .paragraph, .btn{
+    position: relative;
+    left: 10%;
+    top: 20%;
+}
+.split.left h4{
+    font-size: 1.5rem;
+}
+.split.left .iam{
+    font-size: 3.5rem;
+}
+.split.left .paragraph{
+    width: 80%;
+}
+.split.left .btn{
+    background-color: #6C63FF;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.split.left .btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.split.left .btn:hover{
+    background-color: transparent;
+    border: 1px solid #6C63FF;
+    transition: 0.2s ease-in;
+    color: #6C63FF;
+}
+.split.left .btn2{
+    margin-left: 10px;
+}
+.split.right{
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.split.right img{
+    height: 88.4vh;
+}
+
+.sec-2{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 581px;
+    background-color: #6C63FF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sec-2 img{
+    position: absolute;
+    left: 60%;
+    top: 10px;
+    height: 490px;
+}
+.sec-2 h1{
+    position: absolute;
+    color: white;
+    letter-spacing: 2px;
+    left: 5%;
+    top: 10%;
+}
+.sec-2 p{
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    color: white;
+}
+.sec-3{
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 580px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.sec-3 .card{
+    height: 400px;
+    width: 300px;
+    background-color: #6C63FF;
+    margin-top: 4%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.card1 img{
+    position: absolute;
+    height: 180px;
+    top: 5%;
+}
+.card1 h3{
+    position: absolute;
+    top: 52%;
+    color: white;
+    letter-spacing: 1px;
+}
+.card1 p{
+    position: absolute;
+    width: 90%;
+    color: white;
+    top: 62%;
+    left: 13%;
+}
+.card2 img{
+    position: absolute;
+    height: 180px;
+    top: 5%;
+}
+.card2 h3{
+    position: absolute;
+    top: 52%;
+    color: white;
+    letter-spacing: 1px;
+}
+.card2 p{
+    position: absolute;
+    width: 90%;
+    color: white;
+    top: 62%;
+    left: 13%;
+}
+.card3 img{
+    position: absolute;
+    height: 180px;
+    top: 5%;
+}
+.card3 h3{
+    position: absolute;
+    top: 52%;
+    color: white;
+    letter-spacing: 1px;
+}
+.card3 p{
+    position: absolute;
+    width: 90%;
+    color: white;
+    top: 62%;
+    left: 13%;
+}
+
+.sec-4{
+    height: 1000px;
+    width: 100%;
+    background-color: #D9D2E6;
+    position: relative;
+    top: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+.sec-4 h1{
+    position: relative;
+    left: 10%;
+    top: 5%;
+    font-size: 3.5rem;
+}
+.sec-4 p{
+    width: 40%;
+    color: black;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.sec-4 img{
+    position: absolute;
+    height: 400px;
+    top: 5%;
+    left: 55%;
+}
+.sec-4 .photo2{
+    position: absolute;
+    top: 55%;
+    left: 5%;
+}
+.sec-4 .However{
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    left: 57%;
+}
+.sec-4 .achive{
+    width: 38%;
+    position: absolute;
+    left: 50%;
+    top: 67%;
+}
+
+.sec-5{
+    height: 600px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    top: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.sec-5 input{
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 1px solid #6C63FF;
+}
+.sec-5 input::placeholder{
+    color: #6C63FF;
+}
+.sec-5 h1{
+    font-weight: bold;
+}
+.sec-5 button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #6C63FF;
+    color: #6C63FF;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.sec-5 button:hover{
+    background-color: #6C63FF;
+    color: white;
+    transition: 0.3s;
+}
